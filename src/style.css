@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Tangerine", cursive;
+  list-style: none;
+}
+body {
+  background: rgba(255, 192, 193, 1);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 192, 193, 1) 100%
+  );
+  text-align: center;
+  background-attachment: fixed;
+}
+header {
+  background-color: #ffffff7b;
+  padding: 20px;
+  border-bottom: 1px solid #fcec87;
+}
+header .flor1 {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 1%;
+}
+header .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .flor2 {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1%;
+  bottom: 4%;
+  transform: rotate(180deg);
+}
+header .nome-aniversariante {
+  font-size: 90px;
+}
+header .imagem-aniversariante {
+  border-radius: 40px;
+  height: 400px;
+  width: 350px;
+  margin: 10px;
+  box-shadow: 4px 4px 10px 4px rgba(50, 50, 50, 0.77);
+  border: 1px solid #fcec87;
+}
+header .titulo {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 90px;
+  text-shadow: 5px 5px 8px rgba(50, 50, 50, 0.77);
+  padding: 30px;
+}
+.sobre {
+  margin: 50px 50px;
+}
+.sobre .discurso {
+  font-size: 35px;
+}
+.confirmacao .confirmar-presenca {
+  font-size: 30px;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #ffc0c1;
+  border-color: #fcec87;
+  transition: transform 0.3s ease;
+}
+.form {
+  background-color: #ffffff7b;
+  margin: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+}
+.confirmacao .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control input {
+  border: 1px solid #fcec87;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 98%;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Open sans", sans-serif;
+}
+.form-control i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  visibility: hidden;
+}
+.form-control small {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  visibility: hidden;
+  font-size: 23px;
+}
+.confirmacao button {
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 160px;
+  background-color: #ffc0c1;
+  border-color: #fcec87;
+  transition: transform 0.3s ease;
+}
+.presentes .titulo-presentes {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.lista-presentes {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.lista-presentes .detalhe-presente {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff7b;
+  padding: 35px;
+  border-radius: 10px;
+  border: 1px solid #fcec87;
+}
+.detalhe-presente .imagem-presente {
+  height: 200px;
+  width: 150px;
+}
+.detalhe-presente .nome-presente {
+  font-size: 50px;
+  padding: 50px 50px 0px 50px;
+}
+.detalhe-presente .presentear {
+  font-size: 30px;
+  margin: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #ffc0c1;
+  border-color: #fcec87;
+  transition: transform 0.3s ease;
+}
+.mensagens {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.mensagens h2 {
+  font-size: 60px;
+}
+.mensagens .form_group {
+  margin-bottom: 20px;
+}
+.mensagens label {
+  display: block;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 23px;
+  display: flex;
+}
+.mensagens input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 15px;
+  font-family: "Open sans", sans-serif;
+}
+.mensagens button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #ffc0c1;
+  border: 2px solid #fcec87;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+/* Error and sucess */
+.form-control.sucess input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control.sucess i.fa-solid.fa-check {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-solid.fa-exclamation {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}

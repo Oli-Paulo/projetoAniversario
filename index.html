@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="flor1" src="./src/img/flores-douradas.png" alt="">
+        <div class="capa">
+            <h1 class="nome-aniversariante">Nome da aniversariante</h1>
+            <img class="imagem-aniversariante" src="./src/img/cachorro-sorrindo.jpg" alt="Foto da aniversariante">
+            <h1 class="titulo">Meus 15 anos</h1>
+        </div>
+        <img class="flor2" src="./src/img/flores-douradas.png" alt="">
+    </header>
+
+    <section class="sobre">
+        <p class="discurso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam atque fugit fuga
+            rerum non voluptas, dolor quos vero neque repellendus soluta quaerat! Placeat, eligendi! Possimus eligendi
+            harum cupiditate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laborum libero
+            ducimus blanditiis aspernatur similique error iste dolore obcaecati? Deserunt sequi quia perspiciatis
+            voluptatum veritatis consequuntur iusto commodi aliquid pariatur! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Aut fugiat deleniti incidunt voluptatum aliquam neque magni, ad ullam ea explicabo
+            recusandae quasi laudantium quis distinctio! Eum consequatur molestias necessitatibus laborum. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Molestias assumenda earum aperiam doloremque tempore facilis,
+            pariatur maiores iste voluptatem officia dignissimos debitis eum iusto eius harum voluptatum sequi
+            voluptatibus ducimus!</p>
+    </section>
+
+    <section class="confirmacao">
+        <button id="confirmarPresenca" class="confirmar-presenca">Confirmar presença</button>
+        <form id="form" class="form">
+            <div class="form-control">
+                <input type="text" id="username" placeholder="Nome:">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <input type="text" id="email" placeholder="Email:">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <input type="text" id="numero" placeholder="Número do celular:">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <section class="presentes">
+        <h2 class="titulo-presentes">Presentes</h2>
+        <ul class="lista-presentes">
+            <li class="detalhe-presente"><img src="./src/img/perfume.png" alt="" class="imagem-presente">
+                <p class="nome-presente">Perfume</p>
+                <button type="button" class="presentear">Presentear</button>
+            </li>
+            <li class="detalhe-presente"><img src="./src/img/sandalia.png" alt="" class="imagem-presente">
+                <p class="nome-presente">Sandalia</p>
+                <button type="button" class="presentear">Presentear</button>
+            </li>
+            <li class="detalhe-presente"><img src="./src/img/sapato.png" alt="" class="imagem-presente">
+                <p class="nome-presente">Sapato</p>
+                <button type="button" class="presentear">Presentear</button>
+            </li>
+            <li class="detalhe-presente"><img src="./src/img/vestido.png" alt="" class="imagem-presente">
+                <p class="nome-presente">Vestido</p>
+                <button type="button" class="presentear">Presentear</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="mensagens">
+        <h2>Deixe sua mensagem para a aniversariante.</h2>
+        <form id="commentForm">
+            <div class="formGroup">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="formGroup">
+                <label for="comment">Comentário:</label>
+                <textarea name="comment" id="comment" cols="30" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="comments">
+            <!-- Comentários serão exibidos aqui -->
+        </div>
+    </section>
+
+    <script src="./src/script.js"></script>
+    <script src="https://kit.fontawesome.com/3fc2a58064.js" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
