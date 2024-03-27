@@ -34,21 +34,21 @@ header .capa {
 }
 header .flor2 {
   width: 300px;
-  display: flex;
-  justify-content: flex-end;
   position: absolute;
-  right: 1%;
-  bottom: 4%;
+  bottom: 0;
+  right: 0;
   transform: rotate(180deg);
 }
 header .nome-aniversariante {
   font-size: 90px;
+  text-shadow: 5px 5px 8px rgba(50, 50, 50, 0.77);
+  padding: 30px;
 }
 header .imagem-aniversariante {
   border-radius: 40px;
   height: 400px;
   width: 350px;
-  margin: 10px;
+  margin: 15px;
   box-shadow: 4px 4px 10px 4px rgba(50, 50, 50, 0.77);
   border: 1px solid #fcec87;
 }
@@ -59,43 +59,32 @@ header .titulo {
   text-shadow: 5px 5px 8px rgba(50, 50, 50, 0.77);
   padding: 30px;
 }
-.sobre {
-  margin: 50px 50px;
-}
 .sobre .discurso {
   font-size: 35px;
 }
-.confirmacao .confirmar-presenca {
-  font-size: 30px;
-  margin: 30px;
-  padding: 10px;
-  border-radius: 50px;
-  background-color: #ffc0c1;
-  border-color: #fcec87;
-  transition: transform 0.3s ease;
-}
 .form {
   background-color: #ffffff7b;
-  margin: 150px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   padding: 20px;
   display: none;
 }
-.confirmacao .form-control {
+  .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
 .form-control input {
+  box-sizing: border-box; 
   border: 1px solid #fcec87;
   display: block;
   border-radius: 10px;
   font-size: 14px;
-  width: 98%;
+  width: 100%;
   padding: 10px;
   font-size: 15px;
   font-family: "Open sans", sans-serif;
+  margin: 0 auto;
 }
 .form-control i {
   position: absolute;
@@ -110,19 +99,8 @@ header .titulo {
   visibility: hidden;
   font-size: 23px;
 }
-.confirmacao button {
-  font-size: 30px;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 50px;
-  width: 160px;
-  background-color: #ffc0c1;
-  border-color: #fcec87;
-  transition: transform 0.3s ease;
-}
 .presentes .titulo-presentes {
   font-size: 60px;
-  margin-top: 20px;
 }
 .lista-presentes {
   padding: 50px;
@@ -140,6 +118,7 @@ header .titulo {
   padding: 35px;
   border-radius: 10px;
   border: 1px solid #fcec87;
+  width: 200px;
 }
 .detalhe-presente .imagem-presente {
   height: 200px;
@@ -147,22 +126,7 @@ header .titulo {
 }
 .detalhe-presente .nome-presente {
   font-size: 50px;
-  padding: 50px 50px 0px 50px;
-}
-.detalhe-presente .presentear {
-  font-size: 30px;
-  margin: 20px;
-  margin-top: 30px;
-  padding: 10px;
-  border-radius: 50px;
-  background-color: #ffc0c1;
-  border-color: #fcec87;
-  transition: transform 0.3s ease;
-}
-.mensagens {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  padding: 50px 50px 5px 50px;
 }
 .mensagens h2 {
   font-size: 60px;
@@ -179,21 +143,28 @@ header .titulo {
 }
 .mensagens input[type="text"],
 textarea {
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   resize: none;
   font-size: 15px;
   font-family: "Open sans", sans-serif;
 }
 .mensagens button {
   font-size: 20px;
-  padding: 10px 20px;
-  margin: 10px;
+}
+section {
+  margin: 50px;
+}
+button {
+  font-size: 30px;
+  margin: 15px;
+  padding: 10px 30px 10px 30px;
   background-color: #ffc0c1;
   border: 2px solid #fcec87;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
