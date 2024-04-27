@@ -73,4 +73,18 @@
   .lista-presentes {
     padding: 0;
   }
+  .voltar {
+    width: 60px;
+    margin-left: 0;
+  }
+  .form {
+    width: 90%;
+  }
+  .voltar2 {
+    width: 60px;
+    margin-left: 25px;
+  }
+  .confirmar-presentes .imagem-presente {
+    height: 300px;
+  }
 }

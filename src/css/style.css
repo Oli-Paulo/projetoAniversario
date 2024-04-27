@@ -152,6 +152,7 @@ header .titulo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .confirmar-presentes .imagem-presente {
   height: 400px;
@@ -163,7 +164,7 @@ header .titulo {
   display: block;
   border-radius: 10px;
   font-size: 14px;
-  width: 400px;
+  width: 80%;
   padding: 10px;
   font-size: 15px;
   font-family: "Open sans", sans-serif;
