@@ -1,6 +1,10 @@
 // Variavel do botão confirmação
 const confirmacaoPresenca = document.getElementById("confirmarPresenca");
 
+//Variavel botão voltar
+const voltar = document.getElementById("voltar");
+const voltar2 = document.getElementById("voltar2");
+
 // Variaveis da confirmação de presença
 const form = document.getElementById("form");
 const username = document.getElementById("username");
@@ -10,14 +14,28 @@ const numero = document.getElementById("numero");
 // Variavel do envio de mensagens
 const commentForm = document.getElementById('commentForm');
 
+//Variavel dos presentes
+const presentes = document.getElementById("presentes")
+const confirmarPresentes = document.getElementById("confirmarPresentes")
+const perfume = document.getElementById("perfume")
+const sandalia = document.getElementById("sandalia")
+const salto = document.getElementById("salto")
+const vestido = document.getElementById("vestido")
+const viewPerfume = document.getElementById("viewPerfume")
+const viewSandalia = document.getElementById("viewSandalia")
+const viewSalto = document.getElementById("viewSalto")
+const viewVestido = document.getElementById("viewVestido")
+
 // Botão para acessar a confirmação de presença
-confirmacaoPresenca.addEventListener('click', function(){
-  if (form.style.display === 'none'){
-    form.style.display = 'block';
-    confirmacaoPresenca.style.display = 'none';
-  } else {
-    form.style.display = 'none';
-  }
+confirmacaoPresenca.addEventListener('click', function() {
+  form.style.display = 'block';
+  confirmacaoPresenca.style.display = 'none';
+  voltar.style.display = 'block';
+});
+voltar.addEventListener('click', function() {
+  confirmacaoPresenca.style.display = 'block';
+  form.style.display = 'none';
+  voltar.style.display = 'none';
 });
 
 // Confirmação de presença
@@ -43,6 +61,49 @@ commentForm.addEventListener("submit", function(e){
   newComment.innerHTML = "<strong>" + name + ":</strong>" + comment;
   commentContainer.appendChild(newComment);
   document.getElementById("commentForm").requestFullscreen();
+});
+
+//Pagina dos presentes
+voltar2.addEventListener('click', function() {
+  presentes.style.display = 'block';
+  confirmarPresentes.style.display = 'none';
+  voltar2.style.display = 'none';
+});
+perfume.addEventListener('click', function() {
+  viewPerfume.style.display = 'block';
+  confirmarPresentes.style.display = 'block';
+  viewSandalia.style.display = 'none';
+  viewSalto.style.display = 'none';
+  viewVestido.style.display = 'none';
+  presentes.style.display = 'none';
+  voltar2.style.display = 'block';
+});
+sandalia.addEventListener('click', function() {
+  viewSandalia.style.display = 'block';
+  confirmarPresentes.style.display = 'block';
+  viewPerfume.style.display = 'none';
+  viewSalto.style.display = 'none';
+  viewVestido.style.display = 'none';
+  presentes.style.display = 'none';
+  voltar2.style.display = 'block';
+});
+salto.addEventListener('click', function() {
+  viewSalto.style.display = 'block';
+  confirmarPresentes.style.display = 'block';
+  viewSandalia.style.display = 'none';
+  viewPerfume.style.display = 'none';
+  viewVestido.style.display = 'none';
+  presentes.style.display = 'none';
+  voltar2.style.display = 'block';
+});
+vestido.addEventListener('click', function() {
+  viewVestido.style.display = 'block';
+  confirmarPresentes.style.display = 'block';
+  viewSandalia.style.display = 'none';
+  viewSalto.style.display = 'none';
+  viewPerfume.style.display = 'none';
+  presentes.style.display = 'none';
+  voltar2.style.display = 'block';
 });
 
 // Funções da confirmação de presença

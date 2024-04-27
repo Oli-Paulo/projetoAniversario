@@ -3,41 +3,27 @@
   margin: 0;
   font-family: "Tangerine", cursive;
   list-style: none;
+  text-decoration: none;
 }
 body {
-  background: rgba(255, 192, 193, 1);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 192, 193, 1) 100%
-  );
+  background-image: url(../img/rosas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 7px;
   text-align: center;
   background-attachment: fixed;
 }
-header {
-  background-color: #ffffff7b;
-  padding: 20px;
-  border-bottom: 1px solid #fcec87;
-}
-header .flor1 {
-  width: 300px;
-  display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  top: 1%;
+.main {
+  background-color: #eeeeeeac;
+  backdrop-filter: blur(10px);
+  border: 2px solid #fcec878c;
+  border-radius: 10px;
 }
 header .capa {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-header .flor2 {
-  width: 300px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: rotate(180deg);
 }
 header .nome-aniversariante {
   font-size: 90px;
@@ -62,20 +48,38 @@ header .titulo {
 .sobre .discurso {
   font-size: 35px;
 }
+.confirmacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.caixa-botao-voltar {
+  display: flex;
+  width: 100%;
+}
+.voltar {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  margin-left: 3%;
+  margin-bottom: 10px;
+  display: none;
+}
 .form {
   background-color: #ffffff7b;
   padding: 15px;
   border-radius: 10px;
   padding: 20px;
   display: none;
+  width: 50%;
 }
-  .form-control {
+.form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
 .form-control input {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   border: 1px solid #fcec87;
   display: block;
   border-radius: 10px;
@@ -98,6 +102,14 @@ header .titulo {
   left: 0;
   visibility: hidden;
   font-size: 23px;
+}
+.voltar2 {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+
 }
 .presentes .titulo-presentes {
   font-size: 60px;
@@ -122,11 +134,52 @@ header .titulo {
 }
 .detalhe-presente .imagem-presente {
   height: 200px;
-  width: 150px;
 }
 .detalhe-presente .nome-presente {
   font-size: 50px;
   padding: 50px 50px 5px 50px;
+}
+.confirmar-presentes {
+  display: none;
+  margin-top: 50px;
+}
+.confirmar-presentes h2 {
+  font-size: 70px;
+  margin: 20px;
+}
+.confirmar-presentes .lista-presentes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.confirmar-presentes .imagem-presente {
+  height: 400px;
+  margin: 30px;
+}
+.confirmar-presentes input {
+  box-sizing: border-box;
+  border: 1px solid #fcec87;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 400px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Open sans", sans-serif;
+  margin: 0 auto;
+}
+.viewPerfume {
+  display: none;
+}
+.viewSandalia {
+  display: none;
+}
+.viewSalto {
+  display: none;
+}
+.viewVestido {
+  display: none;
 }
 .mensagens h2 {
   font-size: 60px;
@@ -157,8 +210,9 @@ textarea {
 }
 section {
   margin: 50px;
+  margin-bottom: 0;
 }
-button {
+.padrao{
   font-size: 30px;
   margin: 15px;
   padding: 10px 30px 10px 30px;
@@ -168,8 +222,11 @@ button {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-button:hover {
+.padrao:hover {
   transform: scale(1.2);
+}
+a {
+  color: black;
 }
 
 /* Error and sucess */

@@ -1,12 +1,24 @@
+@media only screen and (max-width: 1100px) {
+  header .nome-aniversariante {
+    font-size: 70px;
+  }
+  header .imagem-aniversariante {
+    height: 350px;
+    width: 300px;
+  }
+  header .titulo {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header .nome-aniversariante {
+    margin-top: 80px;
+  }
+  header .titulo {
+    margin-bottom: 80px;
+  }
+}
 @media only screen and (max-width: 600px) {
-  header .flor1 {
-    width: 200px;
-  }
-  header .flor2 {
-    width: 200px;
-    bottom: 10px;
-    right: 20px;
-  }
   header .nome-aniversariante {
     font-size: 55px;
     margin-top: 100px;
@@ -27,7 +39,7 @@
     font-size: 50px;
   }
   .lista-presentes {
-    gap: 20px;
+    padding: 20px;
   }
   .lista-presentes .detalhe-presente {
     padding: 15px;
@@ -52,5 +64,13 @@
     font-size: 25px;
     margin: 10px;
     padding: 5px 15px 5px 15px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .presentes {
+    margin: 0;
+  }
+  .lista-presentes {
+    padding: 0;
   }
 }

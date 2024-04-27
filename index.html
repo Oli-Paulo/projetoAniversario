@@ -14,97 +14,156 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsiv.css">
-
 </head>
 
 <body>
-    <header>
-        <img class="flor1" src="./src/img/flores-douradas.png" alt="">
-        <div class="capa">
-            <h1 class="nome-aniversariante">Nome da aniversariante</h1>
-            <img class="imagem-aniversariante" src="./src/img/cachorro-sorrindo.jpg" alt="Foto da aniversariante">
-            <h1 class="titulo">Meus 15 anos</h1>
+    <div class="main">
+        <header>
+            <div class="capa">
+                <h1 class="nome-aniversariante">Nome da aniversariante</h1>
+                <img class="imagem-aniversariante" src="./src/img/cachorro-sorrindo.jpg" alt="Foto da aniversariante">
+                <h1 class="titulo">Meus 15 anos</h1>
+            </div>
+        </header>
+
+        <section class="sobre">
+            <p class="discurso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam atque fugit fuga
+                rerum non voluptas, dolor quos vero neque repellendus soluta quaerat! Placeat, eligendi! Possimus
+                eligendi
+                harum cupiditate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laborum
+                libero
+                ducimus blanditiis aspernatur similique error iste dolore obcaecati? Deserunt sequi quia perspiciatis
+                voluptatum veritatis consequuntur iusto commodi aliquid pariatur! Lorem ipsum, dolor sit amet
+                consectetur
+                adipisicing elit. Aut fugiat deleniti incidunt voluptatum aliquam neque magni, ad ullam ea explicabo
+                recusandae quasi laudantium quis distinctio! Eum consequatur molestias necessitatibus laborum. Lorem
+                ipsum
+                dolor sit amet consectetur adipisicing elit. Molestias assumenda earum aperiam doloremque tempore
+                facilis,
+                pariatur maiores iste voluptatem officia dignissimos debitis eum iusto eius harum voluptatum sequi
+                voluptatibus ducimus!</p>
+        </section>
+
+        <section class="confirmacao">
+            <div class="caixa-botao-voltar">
+                <button class="voltar" id="voltar">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+                    </svg>
+                </button>
+            </div>
+            <button id="confirmarPresenca" class="padrao">Confirmar presença</button>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <input type="text" id="username" placeholder="Nome:">
+                    <i class="fa-solid fa-exclamation"></i>
+                    <i class="fa-solid fa-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="email" placeholder="Email:">
+                    <i class="fa-solid fa-exclamation"></i>
+                    <i class="fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="numero" placeholder="Número do celular:">
+                    <i class="fa-solid fa-exclamation"></i>
+                    <i class="fa-solid fa-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+                <button type="submit" class="padrao">Enviar</button>
+            </form>
+        </section>
+
+        <section class="presentes" id="presentes">
+            <h2 class="titulo-presentes">Presentes</h2>
+            <ul class="lista-presentes">
+                <li class="detalhe-presente" id="detalhePresente"><img src="./src/img/perfume.png" alt="" class="imagem-presente">
+                    <p class="nome-presente">Perfume</p>
+                    <button type="button" class="padrao" id="perfume">
+                        Presentear
+                    </button>
+                </li>
+                <li class="detalhe-presente" id="detalhePresente"><img src="./src/img/sandalia.png" alt="" class="imagem-presente">
+                    <p class="nome-presente">Sandália</p>
+                    <button type="button" class="padrao" id="sandalia">
+                        Presentear
+                    </button>
+                </li>
+                <li class="detalhe-presente" id="detalhePresente"><img src="./src/img/salto.jpg" alt="" class="imagem-presente">
+                    <p class="nome-presente">Salto</p>
+                    <button type="button" class="padrao" id="salto">
+                        Presentear
+                    </button>
+                </li>
+                <li class="detalhe-presente" id="detalhePresente"><img src="./src/img/vestido.png" alt="" class="imagem-presente">
+                    <p class="nome-presente">Vestido</p>
+                    <button type="button" class="padrao" id="vestido">
+                        Presentear
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+        <div class="confirmar-presentes" id="confirmarPresentes">
+            <div class="caixa-botao-voltar">
+                <button class="voltar2" id="voltar2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="lista-presentes">
+                <li class="viewPerfume" id="viewPerfume">
+                    <h2>Perfume</h2>
+                    <img src="./src/img/perfume.png" alt="" class="imagem-presente">
+                    <input type="text" id="username" placeholder="Nome:">
+                    <button type="button" class="padrao">Confirmar</button>
+                </li>
+                <li class="viewSandalia" id="viewSandalia">
+                    <h2>Sandália</h2>
+                    <img src="./src/img/sandalia.png" alt="" class="imagem-presente">
+                    <input type="text" id="username" placeholder="Nome:">
+                    <button type="button" class="padrao">Confirmar</button>
+                </li>
+                <li class="viewSalto" id="viewSalto">
+                    <h2>Salto</h2>
+                    <img src="./src/img/salto.jpg" alt="" class="imagem-presente">
+                    <input type="text" id="username" placeholder="Nome:">
+                    <button type="button" class="padrao">Confirmar</button>
+                </li>
+                <li class="viewVestido" id="viewVestido">
+                    <h2>Vestido</h2>
+                    <img src="./src/img/vestido.png" alt="" class="imagem-presente">
+                    <input type="text" id="username" placeholder="Nome:">
+                    <button type="button" class="padrao">Confirmar</button>
+                </li>
+            </ul>
         </div>
-        <img class="flor2" src="./src/img/flores-douradas.png" alt="">
-    </header>
 
-    <section class="sobre">
-        <p class="discurso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam atque fugit fuga
-            rerum non voluptas, dolor quos vero neque repellendus soluta quaerat! Placeat, eligendi! Possimus eligendi
-            harum cupiditate tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laborum libero
-            ducimus blanditiis aspernatur similique error iste dolore obcaecati? Deserunt sequi quia perspiciatis
-            voluptatum veritatis consequuntur iusto commodi aliquid pariatur! Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Aut fugiat deleniti incidunt voluptatum aliquam neque magni, ad ullam ea explicabo
-            recusandae quasi laudantium quis distinctio! Eum consequatur molestias necessitatibus laborum. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Molestias assumenda earum aperiam doloremque tempore facilis,
-            pariatur maiores iste voluptatem officia dignissimos debitis eum iusto eius harum voluptatum sequi
-            voluptatibus ducimus!</p>
-    </section>
-
-    <section class="confirmacao">
-        <button id="confirmarPresenca" class="confirmar-presenca">Confirmar presença</button>
-        <form id="form" class="form">
-            <div class="form-control">
-                <input type="text" id="username" placeholder="Nome:">
-                <i class="fa-solid fa-exclamation"></i>
-                <i class="fa-solid fa-check"></i>
-                <small>Mensagem de erro</small>
+        <section class="mensagens">
+            <h2>Deixe sua mensagem para a aniversariante.</h2>
+            <form id="commentForm">
+                <div class="formGroup">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="formGroup">
+                    <label for="comment">Comentário:</label>
+                    <textarea name="comment" id="comment" cols="30" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="padrao">Enviar</button>
+            </form>
+            <div id="comments">
+                <!-- Comentários serão exibidos aqui -->
             </div>
-            <div class="form-control">
-                <input type="text" id="email" placeholder="Email:">
-                <i class="fa-solid fa-exclamation"></i>
-                <i class="fa-check-circle"></i>
-                <small>Mensagem de erro</small>
-            </div>
-            <div class="form-control">
-                <input type="text" id="numero" placeholder="Número do celular:">
-                <i class="fa-solid fa-exclamation"></i>
-                <i class="fa-solid fa-check"></i>
-                <small>Mensagem de erro</small>
-            </div>
-            <button type="submit" class="enviar">Enviar</button>
-        </form>
-    </section>
-
-    <section class="presentes">
-        <h2 class="titulo-presentes">Presentes</h2>
-        <ul class="lista-presentes">
-            <li class="detalhe-presente"><img src="./src/img/perfume.png" alt="" class="imagem-presente">
-                <p class="nome-presente">Perfume</p>
-                <button type="button" class="presentear">Presentear</button>
-            </li>
-            <li class="detalhe-presente"><img src="./src/img/sandalia.png" alt="" class="imagem-presente">
-                <p class="nome-presente">Sandalia</p>
-                <button type="button" class="presentear">Presentear</button>
-            </li>
-            <li class="detalhe-presente"><img src="./src/img/sapato.png" alt="" class="imagem-presente">
-                <p class="nome-presente">Sapato</p>
-                <button type="button" class="presentear">Presentear</button>
-            </li>
-            <li class="detalhe-presente"><img src="./src/img/vestido.png" alt="" class="imagem-presente">
-                <p class="nome-presente">Vestido</p>
-                <button type="button" class="presentear">Presentear</button>
-            </li>
-        </ul>
-    </section>
-
-    <section class="mensagens">
-        <h2>Deixe sua mensagem para a aniversariante.</h2>
-        <form id="commentForm">
-            <div class="formGroup">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="formGroup">
-                <label for="comment">Comentário:</label>
-                <textarea name="comment" id="comment" cols="30" rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="comments">
-            <!-- Comentários serão exibidos aqui -->
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="./src/js/script.js"></script>
     <script src="https://kit.fontawesome.com/3fc2a58064.js" crossorigin="anonymous">
