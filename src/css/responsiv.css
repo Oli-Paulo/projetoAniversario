@@ -14,14 +14,11 @@
   header .nome-aniversariante {
     margin-top: 80px;
   }
-  header .titulo {
-    margin-bottom: 80px;
-  }
 }
 @media only screen and (max-width: 600px) {
   header .nome-aniversariante {
     font-size: 55px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   header .imagem-aniversariante {
     height: 250px;
@@ -30,61 +27,28 @@
   }
   header .titulo {
     font-size: 55px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
   }
   .sobre .discurso {
     font-size: 30px;
   }
-  .presentes .titulo-presentes {
+  h2 {
     font-size: 50px;
   }
-  .lista-presentes {
-    padding: 20px;
+  .sobre .discurso,
+  .mensagem-confirmacao,
+  .mensagem-presentes {
+    font-size: 20px;
   }
-  .lista-presentes .detalhe-presente {
-    padding: 15px;
-    height: 230px;
-    width: 120px;
-  }
-  .detalhe-presente .imagem-presente {
-    height: 100px;
-    width: 75px;
-  }
-  .detalhe-presente .nome-presente {
-    padding-top: 30px;
-    font-size: 40px;
-  }
-  .mensagens h2 {
+  h3 {
     font-size: 50px;
+  }
+  ul li {
+    font-size: 20px;
   }
   section {
-    margin: 25px;
-  }
-  button {
-    font-size: 25px;
-    margin: 10px;
-    padding: 5px 15px 5px 15px;
-  }
-}
-@media only screen and (max-width: 455px) {
-  .presentes {
-    margin: 0;
-  }
-  .lista-presentes {
-    padding: 0;
-  }
-  .voltar {
-    width: 60px;
-    margin-left: 0;
-  }
-  .form {
-    width: 90%;
-  }
-  .voltar2 {
-    width: 60px;
+    margin-top: 50px;
     margin-left: 25px;
-  }
-  .confirmar-presentes .imagem-presente {
-    height: 300px;
+    margin-right: 25px;
   }
 }

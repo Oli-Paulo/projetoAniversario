@@ -26,14 +26,14 @@ header .capa {
   flex-direction: column;
 }
 header .nome-aniversariante {
-  font-size: 90px;
+  font-size: 100px;
   text-shadow: 5px 5px 8px rgba(50, 50, 50, 0.77);
   padding: 30px;
 }
 header .imagem-aniversariante {
   border-radius: 40px;
-  height: 400px;
-  width: 350px;
+  height: 450px;
+  width: 400px;
   margin: 15px;
   box-shadow: 4px 4px 10px 4px rgba(50, 50, 50, 0.77);
   border: 1px solid #fcec87;
@@ -41,211 +41,40 @@ header .imagem-aniversariante {
 header .titulo {
   font-weight: 700;
   font-style: normal;
-  font-size: 90px;
+  font-size: 100px;
   text-shadow: 5px 5px 8px rgba(50, 50, 50, 0.77);
   padding: 30px;
+  margin: 30px;
 }
-.sobre .discurso {
-  font-size: 35px;
+.sobre .discurso,
+.mensagem-confirmacao,
+.mensagem-presentes {
+  font-size: 25px;
+  margin: 30px;
+  font-family: "Merriweather";
 }
-.confirmacao {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+h2 {
+  font-size: 70px;
+  margin: 30px;
 }
-.caixa-botao-voltar {
-  display: flex;
+iframe {
   width: 100%;
-}
-.voltar {
-  background-color: transparent;
-  border: none;
-  width: 25px;
-  margin-left: 3%;
-  margin-bottom: 10px;
-  display: none;
-}
-.form {
-  background-color: #ffffff7b;
-  padding: 15px;
-  border-radius: 10px;
-  padding: 20px;
-  display: none;
-  width: 50%;
-}
-.form-control {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
-.form-control input {
-  box-sizing: border-box;
-  border: 1px solid #fcec87;
-  display: block;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px;
-  font-size: 15px;
-  font-family: "Open sans", sans-serif;
+  max-width: 800px;
   margin: 0 auto;
-}
-.form-control i {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  visibility: hidden;
-}
-.form-control small {
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  visibility: hidden;
-  font-size: 23px;
-}
-.voltar2 {
-  background-color: transparent;
-  border: none;
-  width: 25px;
-  margin-left: 5%;
-  margin-bottom: 10px;
-
-}
-.presentes .titulo-presentes {
-  font-size: 60px;
-}
-.lista-presentes {
-  padding: 50px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.lista-presentes .detalhe-presente {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff7b;
-  padding: 35px;
-  border-radius: 10px;
-  border: 1px solid #fcec87;
-  width: 200px;
-}
-.detalhe-presente .imagem-presente {
-  height: 200px;
-}
-.detalhe-presente .nome-presente {
-  font-size: 50px;
-  padding: 50px 50px 5px 50px;
-}
-.confirmar-presentes {
-  display: none;
   margin-top: 50px;
+  display: block;
+  border: none;
 }
-.confirmar-presentes h2 {
+h3 {
   font-size: 70px;
   margin: 20px;
 }
-.confirmar-presentes .lista-presentes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.confirmar-presentes .imagem-presente {
-  height: 400px;
-  margin: 30px;
-}
-.confirmar-presentes input {
-  box-sizing: border-box;
-  border: 1px solid #fcec87;
-  display: block;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 80%;
-  padding: 10px;
-  font-size: 15px;
-  font-family: "Open sans", sans-serif;
-  margin: 0 auto;
-}
-.viewPerfume {
-  display: none;
-}
-.viewSandalia {
-  display: none;
-}
-.viewSalto {
-  display: none;
-}
-.viewVestido {
-  display: none;
-}
-.mensagens h2 {
-  font-size: 60px;
-}
-.mensagens .form_group {
-  margin-bottom: 20px;
-}
-.mensagens label {
-  display: block;
-  font-weight: bold;
+ul li {
+  font-size: 25px;
   margin: 10px;
-  font-size: 23px;
-  display: flex;
-}
-.mensagens input[type="text"],
-textarea {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  resize: none;
-  font-size: 15px;
-  font-family: "Open sans", sans-serif;
-}
-.mensagens button {
-  font-size: 20px;
+  font-family: "Merriweather";
 }
 section {
-  margin: 50px;
+  margin: 100px;
   margin-bottom: 0;
-}
-.padrao{
-  font-size: 30px;
-  margin: 15px;
-  padding: 10px 30px 10px 30px;
-  background-color: #ffc0c1;
-  border: 2px solid #fcec87;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.padrao:hover {
-  transform: scale(1.2);
-}
-a {
-  color: black;
-}
-
-/* Error and sucess */
-.form-control.sucess input {
-  border-color: #2ecc71;
-}
-.form-control.error input {
-  border-color: #e74c3c;
-}
-.form-control.sucess i.fa-solid.fa-check {
-  color: #2ecc71;
-  visibility: visible;
-}
-.form-control.error i.fa-solid.fa-exclamation {
-  color: #e74c3c;
-  visibility: visible;
-}
-.form-control.error small {
-  visibility: visible;
-  color: #e74c3c;
 }
